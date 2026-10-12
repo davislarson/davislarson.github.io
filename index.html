@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Davis Larson</title>
+  <!-- TODO: one-sentence summary shown in search results and link previews -->
+  <meta name="description" content="Davis Larson — [target role]. Projects, about, and contact.">
+  <style>
+    :root {
+      --bg: #fdfdfc;
+      --text: #1c1d1f;
+      --muted: #5f6368;
+      --line: #e3e3e0;
+      --accent: #1a56c4;
+      --card: #ffffff;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #15171a;
+        --text: #e8e8e6;
+        --muted: #a0a4aa;
+        --line: #2c3036;
+        --accent: #8ab4ff;
+        --card: #1c1f23;
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font: 17px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    }
+    main {
+      max-width: 44rem;
+      margin: 0 auto;
+      padding: 3.5rem 1.25rem 4rem;
+    }
+    a { color: var(--accent); text-underline-offset: 0.15em; }
+    a:hover { text-decoration-thickness: 2px; }
+
+    header h1 {
+      margin: 0;
+      font-size: clamp(2rem, 6vw, 2.75rem);
+      line-height: 1.15;
+      letter-spacing: -0.02em;
+    }
+    .role { margin: 0.4rem 0 0; font-size: 1.2rem; }
+    .meta { margin: 0.15rem 0 0; color: var(--muted); }
+    .links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.4rem 1.25rem;
+      margin: 1.1rem 0 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    section { margin-top: 3rem; }
+    h2 {
+      margin: 0 0 1rem;
+      padding-bottom: 0.4rem;
+      border-bottom: 1px solid var(--line);
+      font-size: 0.85rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
+
+    .projects { margin: 0; padding: 0; list-style: none; display: grid; gap: 1rem; }
+    .project {
+      padding: 1.1rem 1.25rem;
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+    }
+    .project h3 { margin: 0; font-size: 1.1rem; }
+    .project p { margin: 0.4rem 0 0; }
+    .project .stack { color: var(--muted); font-size: 0.92rem; }
+    .project .outcome { font-weight: 600; }
+    .project .project-links { display: flex; gap: 1.25rem; }
+    .empty { color: var(--muted); }
+
+    footer {
+      margin-top: 3.5rem;
+      padding-top: 1rem;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <h1>Davis Larson</h1>
+      <!-- TODO: target role, e.g. "Software Engineer — New Grad" -->
+      <p class="role">[Target role]</p>
+      <!-- TODO: school, degree, and graduation date -->
+      <p class="meta">[Degree], [School] · Graduating [Month Year]</p>
+
+      <ul class="links">
+        <!-- TODO: replace both occurrences with your email -->
+        <li><a href="mailto:you@example.com">you@example.com</a></li>
+        <li><a href="https://github.com/davislarson">GitHub</a></li>
+        <!-- TODO: replace with your LinkedIn URL -->
+        <li><a href="https://www.linkedin.com/in/YOUR-HANDLE">LinkedIn</a></li>
+        <!-- Uncomment only after resume.pdf is in the repo root.
+        <li><a href="resume.pdf">Resume (PDF)</a></li>
+        -->
+      </ul>
+    </header>
+
+    <section id="projects">
+      <h2>Projects</h2>
+
+      <!-- Delete this line once the first project is added below. -->
+      <p class="empty">Projects coming soon.</p>
+
+      <ul class="projects">
+        <!--
+        Copy this block once per project (aim for three to five), then fill it in.
+        Every link must work: remove the Live demo link if there isn't one.
+
+        <li class="project">
+          <h3>Project name</h3>
+          <p>What it does, in one or two sentences, written for someone who has never seen it.</p>
+          <p class="stack">Stack: Language, Framework, Database, Hosting</p>
+          <p class="outcome">Measured outcome, e.g. "Cut page load from 2.1s to 0.6s" or "120 weekly users".</p>
+          <p class="project-links">
+            <a href="https://github.com/davislarson/REPO">Repo</a>
+            <a href="https://example.com">Live demo</a>
+          </p>
+        </li>
+        -->
+      </ul>
+    </section>
+
+    <section id="about">
+      <h2>About</h2>
+      <!-- TODO: three or four sentences. What you study, what you like building, what you're looking for. -->
+      <p>[A short paragraph about you: what you study, the kind of work you enjoy, and the role you're looking for.]</p>
+    </section>
+
+    <footer>
+      <p>© 2026 Davis Larson</p>
+    </footer>
+  </main>
+</body>
+</html>
