@@ -39,6 +39,15 @@
     a { color: var(--accent); text-underline-offset: 0.15em; }
     a:hover { text-decoration-thickness: 2px; }
 
+    .headshot {
+      display: block;
+      width: 112px;
+      height: 112px;
+      margin-bottom: 1.25rem;
+      border-radius: 50%;
+      border: 1px solid var(--line);
+      object-fit: cover;
+    }
     header h1 {
       margin: 0;
       font-size: clamp(2rem, 6vw, 2.75rem);
@@ -93,6 +102,8 @@
 <body>
   <main>
     <header>
+      <!-- Expects headshot.jpg in the repo root (square crop, about 400x400). -->
+      <img class="headshot" src="headshot.jpg" alt="Davis Larson" width="112" height="112">
       <h1>Davis Larson</h1>
       <p class="role">Software Engineer · Tech Consulting · Cloud/Infrastructure Engineer — New Grad</p>
       <p class="meta">BS Information Systems &amp; Master of Information Systems Management (MISM), Brigham Young University · Graduating April 2027</p>
